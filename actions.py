@@ -1,95 +1,81 @@
-def button1():
+def B01():
     pass
 
-def button2():
+def B02():
     pass
 
-def button3():
+def B03():
     pass
 
-def button4():
+def B04():
     pass
 
-def button5():
+def B05():
     pass
 
-def taskleiste_links():
+def B06():
     pass
 
-def taskleiste_mitte():
+def B07():
     pass
 
-def standard_hintergrund_festlegen():
+def B08():
     pass
 
-def suchleistenbildchen_deaktivieren():
+def B09():
     pass
 
-def suchleistenbildchen_aktivieren():
+def B10():
     pass
 
-def widgets_deaktivieren():
+def B11():
     pass
 
-def widgets_aktivieren():
+def B12():
     pass
 
-def klassisches_aktionsmenue():
+def B13():
     pass
 
-def modernes_aktionsmenue():
+def B14():
     pass
 
-def remove_bing_weather():
+def B15():
     pass
 
-def remove_microsoft_paint():
+def B16():
     pass
 
-def remove_microsoft_people():
+def B17():
     pass
 
-def remove_microsoft_solitaire():
+def B18():
     pass
 
-def remove_microsoft_solitaire_collection():
+def B19():
     pass
 
-def remove_microsoft_sticky_notes():
+def B20():
     pass
 
-def remove_screen_sketch():
+def B21():
     pass
 
-def remove_skype_app():
+def B22():
     pass
 
-def remove_todos():
+def B23():
     pass
 
-def remove_windows_alarms():
-    pass
+def B24():
+    print("Remove Xbox Gaming Overlay ausgewaehlt")
 
-def remove_windows_calculator():
-    pass
+def B25():
+    print("Remove Your Phone ausgewaehlt")
 
-def remove_windows_camera():
-    pass
+def B26():
+    print("Remove Zune Music ausgewaehlt")
 
-def remove_windows_communications_apps():
-    pass
+def B27():
+    print("Remove Zune Video ausgewaehlt")
 
-def remove_windows_sound_recorder():
-    pass
-
-def remove_xbox_gaming_overlay():
-    pass
-
-def remove_your_phone():
-    pass
-
-def remove_zune_music():
-    pass
-
-def remove_zune_video():
-    pass
