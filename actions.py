@@ -1,17 +1,17 @@
 def B01():
-    pass
+    print("Taskleiste Links ausgewählt")
 
 def B02():
-    pass
+    print("Taskleiste Mitte ausgewaehlt")
 
 def B03():
-    pass
+    print("Standardhintergrund ausgewaehlt")
 
 def B04():
-    pass
+    print("Suchleistenbildchen deaktiviert")
 
 def B05():
-    pass
+    print("Suchleistenbildchen aktiviert")
 
 def B06():
     pass

@@ -16,19 +16,19 @@ def Fenster():
     Label1.place(x=100, y=80, width=300)
 
 
-    Button1 = Button(fenster, text="Taskleiste Links", command=lambda: print("Taskleiste Links ausgewaehlt"))
+    Button1 = Button(fenster, text="Taskleiste Links", command=lambda: B01())
     Button1.place(x=100, y=120, width=300)
 
-    Button2 = Button(fenster, text="Taskleiste Mitte", command=lambda: print("Taskleiste Mitte ausgewaehlt"))
+    Button2 = Button(fenster, text="Taskleiste Mitte", command=lambda: B02())
     Button2.place(x=100, y=160, width=300)
 
-    Button3 = Button(fenster, text="Standard Hintergrund festlegen", command=lambda: print("Standard Hintergrund festgelegt"))
+    Button3 = Button(fenster, text="Standard Hintergrund festlegen", command=lambda: B03())
     Button3.place(x=100, y=200, width=300)
 
-    Button4 = Button(fenster, text="Suchleistenbildchen deaktivieren", command=lambda: print("Suchleistenbildchen deaktiviert"))
+    Button4 = Button(fenster, text="Suchleistenbildchen deaktivieren", command=lambda: B04())
     Button4.place(x=100, y=240, width=300)
 
-    Button5 = Button(fenster, text="Suchleistenbildchen aktivieren", command=lambda: print("Suchleistenbildchen aktiviert"))
+    Button5 = Button(fenster, text="Suchleistenbildchen aktivieren", command=lambda: B05())
     Button5.place(x=100, y=280, width=300)
 
     Button6 = Button(fenster, text="Widgets deaktivieren", command=lambda: print("Widgets deaktiviert"))
