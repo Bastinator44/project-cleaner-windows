@@ -1,0 +1,1 @@
+farbe_hg_b = {'bg': '#FFFFFF'}
