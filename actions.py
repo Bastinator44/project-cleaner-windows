@@ -26,46 +26,46 @@ def B09():
     print("Modernes Aktionsmenue ausgewaehlt")
 
 def B10():
-    pass
+    print("Remove Bing Weather ausgewaehlt")
 
 def B11():
-    pass
+    print("Remove Microsoft Paint ausgewaehlt")
 
 def B12():
-    pass
+    print("Remove Microsoft People ausgewaehlt")
 
 def B13():
-    pass
+    print("Remove Microsoft Solitaire ausgewaehlt")
 
 def B14():
-    pass
+    print("Remove Microsoft Solitaire Collection ausgewaehlt")
 
 def B15():
-    pass
+    print("Remove Microsoft Sticky Notes ausgewaehlt")
 
 def B16():
-    pass
+    print("Remove Screen Sketch ausgewaehlt")
 
 def B17():
-    pass
+    print("Remove Skype App ausgewaehlt")
 
 def B18():
-    pass
+    print("Remove Todos ausgewaehlt")
 
 def B19():
-    pass
+    print("Remove Windows Alarms ausgewaehlt")
 
 def B20():
-    pass
+    print("Remove Windows Calculator ausgewaehlt")
 
 def B21():
-    pass
+    print("Remove Windows Camera ausgewaehlt")
 
 def B22():
-    pass
+    print("Remove Windows Communications Apps ausgewaehlt")
 
 def B23():
-    pass
+    print("Remove Windows Sound Recorder ausgewaehlt")
 
 def B24():
     print("Remove Xbox Gaming Overlay ausgewaehlt")

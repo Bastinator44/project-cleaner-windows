@@ -47,58 +47,58 @@ def Fenster():
     Label2 = Label(fenster, text="Programm Einstellungen")
     Label2.place(x=700, y=80, width=300)
 
-    Button10 = Button(fenster, text="Remove Bing Weather", command=lambda: print("Remove Bing Weather ausgewaehlt"))
+    Button10 = Button(fenster, text="Remove Bing Weather", command=lambda: B10())
     Button10.place(x=540, y=120, width=300)
 
-    Button11 = Button(fenster, text="Remove Microsoft Paint", command=lambda: print("Remove Microsoft Paint ausgewaehlt"))
+    Button11 = Button(fenster, text="Remove Microsoft Paint", command=lambda: B11())
     Button11.place(x=540, y=160, width=300)
 
-    Button12 = Button(fenster, text="Remove Microsoft People", command=lambda: print("Remove Microsoft People ausgewaehlt"))
+    Button12 = Button(fenster, text="Remove Microsoft People", command=lambda: B12())
     Button12.place(x=540, y=200, width=300)
 
-    Button13 = Button(fenster, text="Remove Microsoft Solitaire", command=lambda: print("Remove Microsoft Solitaire ausgewaehlt"))
+    Button13 = Button(fenster, text="Remove Microsoft Solitaire", command=lambda: B13())
     Button13.place(x=540, y=240, width=300)
 
-    Button14 = Button(fenster, text="Remove Microsoft Solitaire Collection", command=lambda: print("Remove Microsoft Solitaire Collection ausgewaehlt"))
+    Button14 = Button(fenster, text="Remove Microsoft Solitaire Collection", command=lambda: B14())
     Button14.place(x=540, y=280, width=300)
 
-    Button15 = Button(fenster, text="Remove Microsoft Sticky Notes", command=lambda: print("Remove Microsoft Sticky Notes ausgewaehlt"))
+    Button15 = Button(fenster, text="Remove Microsoft Sticky Notes", command=lambda: B15())
     Button15.place(x=540, y=320, width=300)
 
-    Button16 = Button(fenster, text="Remove Screen Sketch", command=lambda: print("Remove Screen Sketch ausgewaehlt"))
+    Button16 = Button(fenster, text="Remove Screen Sketch", command=lambda: B16())
     Button16.place(x=540, y=360, width=300)
 
-    Button17 = Button(fenster, text="Remove Skype App", command=lambda: print("Remove Skype App ausgewaehlt"))
+    Button17 = Button(fenster, text="Remove Skype App", command=lambda: B17())
     Button17.place(x=540, y=400, width=300)
 
-    Button18 = Button(fenster, text="Remove Todos", command=lambda: print("Remove Todos ausgewaehlt"))
+    Button18 = Button(fenster, text="Remove Todos", command=lambda: B18())
     Button18.place(x=540, y=440, width=300)
 
-    Button19 = Button(fenster, text="Remove Windows Alarms", command=lambda: print("Remove Windows Alarms ausgewaehlt"))
+    Button19 = Button(fenster, text="Remove Windows Alarms", command=lambda: B19())
     Button19.place(x=540, y=480, width=300)
 
-    Button20 = Button(fenster, text="Remove Windows Calculator", command=lambda: print("Remove Windows Calculator ausgewaehlt"))
+    Button20 = Button(fenster, text="Remove Windows Calculator", command=lambda: B20())
     Button20.place(x=540, y=520, width=300)
 
-    Button21 = Button(fenster, text="Remove Windows Camera", command=lambda: print("Remove Windows Camera ausgewaehlt"))
+    Button21 = Button(fenster, text="Remove Windows Camera", command=lambda: B21())
     Button21.place(x=540, y=560, width=300)
 
-    Button22 = Button(fenster, text="Remove Windows Communications Apps", command=lambda: print("Remove Windows Communications Apps ausgewaehlt"))
+    Button22 = Button(fenster, text="Remove Windows Communications Apps", command=lambda: B22())
     Button22.place(x=540, y=600, width=300)
 
-    Button23 = Button(fenster, text="Remove Windows Sound Recorder", command=lambda: print("Remove Windows Sound Recorder ausgewaehlt"))
+    Button23 = Button(fenster, text="Remove Windows Sound Recorder", command=lambda: B23())
     Button23.place(x=860, y=120, width=300)
 
-    Button24 = Button(fenster, text="Remove Xbox Gaming Overlay", command=lambda: (print("Remove Xbox Gaming Overlay ausgewaehlt"), B24()))
+    Button24 = Button(fenster, text="Remove Xbox Gaming Overlay", command=lambda: B24())
     Button24.place(x=860, y=160, width=300)
 
-    Button25 = Button(fenster, text="Remove Your Phone", command=lambda: (print("Remove Your Phone ausgewaehlt"), B25()))
+    Button25 = Button(fenster, text="Remove Your Phone", command=lambda: B25())
     Button25.place(x=860, y=200, width=300)
 
-    Button26 = Button(fenster, text="Remove Zune Music", command=lambda: (print("Remove Zune Music ausgewaehlt"), B26()))
+    Button26 = Button(fenster, text="Remove Zune Music", command=lambda: B26())
     Button26.place(x=860, y=240, width=300)
 
-    Button27 = Button(fenster, text="Remove Zune Video", command=lambda: (print("Remove Zune Video ausgewaehlt"), B27()))
+    Button27 = Button(fenster, text="Remove Zune Video", command=lambda: B27())
     Button27.place(x=860, y=280, width=300)
 
     # Schließen-Button
