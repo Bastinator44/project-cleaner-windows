@@ -31,16 +31,16 @@ def Fenster():
     Button5 = Button(fenster, text="Suchleistenbildchen aktivieren", command=lambda: B05())
     Button5.place(x=100, y=280, width=300)
 
-    Button6 = Button(fenster, text="Widgets deaktivieren", command=lambda: print("Widgets deaktiviert"))
+    Button6 = Button(fenster, text="Widgets deaktivieren", command=lambda: B06())
     Button6.place(x=100, y=320, width=300)
 
-    Button7 = Button(fenster, text="Widgets aktivieren", command=lambda: print("Widgets aktiviert"))
+    Button7 = Button(fenster, text="Widgets aktivieren", command=lambda: B07())
     Button7.place(x=100, y=360, width=300)
 
-    Button8 = Button(fenster, text="klassisches Aktionsmenue", command=lambda: print("Klassisches Aktionsmenue ausgewaehlt"))
+    Button8 = Button(fenster, text="klassisches Aktionsmenue", command=lambda: B08())
     Button8.place(x=100, y=400, width=300)
 
-    Button9 = Button(fenster, text="modernes Aktionsmenue", command=lambda: print("Modernes Aktionsmenue ausgewaehlt"))
+    Button9 = Button(fenster, text="modernes Aktionsmenue", command=lambda: B09())
     Button9.place(x=100, y=440, width=300)
 
 # Programm Einstellungen    

@@ -14,16 +14,16 @@ def B05():
     print("Suchleistenbildchen aktiviert")
 
 def B06():
-    pass
+    print("Widgets deaktiviert")
 
 def B07():
-    pass
+    print("Widgets aktiviert")
 
 def B08():
-    pass
+    print("Klassisches Aktionsmenue ausgewaehlt")
 
 def B09():
-    pass
+    print("Modernes Aktionsmenue ausgewaehlt")
 
 def B10():
     pass
