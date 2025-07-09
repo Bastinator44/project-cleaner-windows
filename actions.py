@@ -2,6 +2,35 @@ import os
 
 global file_var
 file_var = []
+dictionary_files = {
+        "A1": "Allgemeine Einstellungen/1_Taskleiste_links.bat",
+        "A2": "Allgemeine Einstellungen/2_Taskleiste_zentriert.bat",
+        "A3": "Allgemeine Einstellungen/3_Standard_Hintergrundfestlegen.bat",
+        "A4": "Allgemeine Einstellungen/4_Suchleistenbildchen_deaktivieren.bat",
+        "A5": "Allgemeine Einstellungen/5_Suchleistenbildchen_aktivieren.bat",
+        "A6": "Allgemeine Einstellungen/6_Widgets_deaktivieren.bat",
+        "A7": "Allgemeine Einstellungen/7_Widgets_aktivieren.bat",
+        "A8": "Allgemeine Einstellungen/8_klassisches_Aktionsmenue.bat",
+        "A9": "Allgemeine Einstellungen/9_modernes_Aktionsmenue.bat",
+        "P1": "Programm Einstellungen/Remove_BingWeather.bat",
+        "P2": "Programm Einstellungen/Remove_MSPaint.bat",
+        "P3": "Programm Einstellungen/Remove_People.bat",
+        "P4": "Programm Einstellungen/Remove_ScreenSketch.bat",
+        "P5": "Programm Einstellungen/Remove_SkypeApp.bat",
+        "P6": "Programm Einstellungen/Remove_Todos.bat",
+        "P7": "Programm Einstellungen/Remove_WindowsAlarms.bat",
+        "P8": "Programm Einstellungen/Remove_WindowsCalculator.bat",
+        "P9": "Programm Einstellungen/Remove_WindowsCamera.bat",
+        "P10": "Programm Einstellungen/Remove_WindowsCommunicationsApps.bat",
+        "P11": "Programm Einstellungen/Remove_WindowsSoundRecorder.bat",
+        "P12": "Programm Einstellungen/Remove_XboxGamingOverlay.bat",
+        "P13": "Programm Einstellungen/Remove_YourPhone.bat",
+        "P14": "Programm Einstellungen/Remove_ZuneMusic.bat",
+        "P15": "Programm Einstellungen/Remove_ZuneVideo.bat",
+        "P16": "Programm Einstellungen/Remove_MicrosoftSolitaire.bat",
+        "P17": "Programm Einstellungen/Remove_MicrosoftSolitaireCollection.bat",
+        "P18": "Programm Einstellungen/Remove_MicrosoftStickyNotes.bat"
+    }
 
 def B01(active1):
     active_content = active1.cget("text")
@@ -247,7 +276,6 @@ def B27(active27):
         active27.config(text="O")
 
 def proof(active1, active2, active4, active5, active6, active7, active8, active9):
-    print("verwendet wird: " + str(file_var))
     if len(file_var) == 0:
         print("Es wurde nichts ausgewaehlt.")
     else:
@@ -271,4 +299,9 @@ def proof(active1, active2, active4, active5, active6, active7, active8, active9
     print("Pruefung abgeschlossen.")
 
 def save(file_var):
-    pass
+    work(file_var)
+
+def work(file_var):
+    for file in file_var:
+        next_path = dictionary_files.get(file)
+        print(next_path)
