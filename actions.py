@@ -1,4 +1,5 @@
 import os
+from tkinter import filedialog
 
 global file_var
 file_var = []
@@ -299,9 +300,31 @@ def proof(active1, active2, active4, active5, active6, active7, active8, active9
     print("Pruefung abgeschlossen.")
 
 def save(file_var):
-    work(file_var)
+    file_paths = work(file_var)
+    text = work2(file_paths)
+    safe(text)
 
 def work(file_var):
+    file_paths = ""
     for file in file_var:
         next_path = dictionary_files.get(file)
-        print(next_path)
+        if next_path is not None:
+            file_paths += next_path + "\n"
+    return file_paths
+
+def work2(file_paths):
+    text = ""
+    for file_path in file_paths.splitlines():
+        inhalt = open(file_path, "r").read()
+        text += inhalt + "\n"
+    return text
+
+def safe(text):
+    # Öffnet den Speichern-Dialog
+    file_path = filedialog.asksaveasfilename(
+        defaultextension=".bat",
+        filetypes=[("Scheiß Verficktes Windows Script", "*.bat"), ("Alle Dateien", "*.*")]
+    )
+    if file_path:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(text)
