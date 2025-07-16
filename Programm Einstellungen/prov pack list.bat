@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy Bypass -Command "Get-AppxProvisionedPackage -Online | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $_.PackageName }; Get-AppxProvisionedPackage -Online | ForEach-Object { $installed = Get-AppxPackage | Where-Object { $_.Name -eq $_.DisplayName }; foreach ($app in $installed) { Remove-AppxPackage -Package $app.PackageFullName } }"
