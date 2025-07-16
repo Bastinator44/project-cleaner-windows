@@ -2,8 +2,9 @@ import os
 from tkinter import filedialog
 
 global file_var
-file_var = []
+file_var = ["G1"]
 dictionary_files = {
+        "G1": "Allgemeine Einstellungen/10_adminrechte.bat",
         "A1": "Allgemeine Einstellungen/1_Taskleiste_links.bat",
         "A2": "Allgemeine Einstellungen/2_Taskleiste_zentriert.bat",
         "A3": "Allgemeine Einstellungen/3_Standard_Hintergrundfestlegen.bat",
@@ -13,24 +14,7 @@ dictionary_files = {
         "A7": "Allgemeine Einstellungen/7_Widgets_aktivieren.bat",
         "A8": "Allgemeine Einstellungen/8_klassisches_Aktionsmenue.bat",
         "A9": "Allgemeine Einstellungen/9_modernes_Aktionsmenue.bat",
-        "P1": "Programm Einstellungen/Remove_BingWeather.bat",
-        "P2": "Programm Einstellungen/Remove_MSPaint.bat",
-        "P3": "Programm Einstellungen/Remove_People.bat",
-        "P4": "Programm Einstellungen/Remove_ScreenSketch.bat",
-        "P5": "Programm Einstellungen/Remove_SkypeApp.bat",
-        "P6": "Programm Einstellungen/Remove_Todos.bat",
-        "P7": "Programm Einstellungen/Remove_WindowsAlarms.bat",
-        "P8": "Programm Einstellungen/Remove_WindowsCalculator.bat",
-        "P9": "Programm Einstellungen/Remove_WindowsCamera.bat",
-        "P10": "Programm Einstellungen/Remove_WindowsCommunicationsApps.bat",
-        "P11": "Programm Einstellungen/Remove_WindowsSoundRecorder.bat",
-        "P12": "Programm Einstellungen/Remove_XboxGamingOverlay.bat",
-        "P13": "Programm Einstellungen/Remove_YourPhone.bat",
-        "P14": "Programm Einstellungen/Remove_ZuneMusic.bat",
-        "P15": "Programm Einstellungen/Remove_ZuneVideo.bat",
-        "P16": "Programm Einstellungen/Remove_MicrosoftSolitaire.bat",
-        "P17": "Programm Einstellungen/Remove_MicrosoftSolitaireCollection.bat",
-        "P18": "Programm Einstellungen/Remove_MicrosoftStickyNotes.bat"
+        "P1": "Programm Einstellungen/1_remove_apps_prov_package.bat"
     }
 
 def B01(active1):
@@ -123,161 +107,8 @@ def B10(active10):
         file_var.remove("P1")
         active10.config(text="O")
 
-def B11(active11):
-    active_content = active11.cget("text")
-    if active_content == "O":
-        active11.config(text="X")
-        file_var.append("P2")
-    if active_content == "X":
-        file_var.remove("P2")
-        active11.config(text="O")
-
-def B12(active12):
-    active_content = active12.cget("text")
-    if active_content == "O":
-        active12.config(text="X")
-        file_var.append("P3")
-    if active_content == "X":
-        file_var.remove("P3")
-        active12.config(text="O")
-
-def B13(active13):
-    active_content = active13.cget("text")
-    if active_content == "O":
-        active13.config(text="X")
-        file_var.append("P4")
-    if active_content == "X":
-        file_var.remove("P4")
-        active13.config(text="O")
-
-def B14(active14):
-    active_content = active14.cget("text")
-    if active_content == "O":
-        active14.config(text="X")
-        file_var.append("P5")
-    if active_content == "X":
-        file_var.remove("P5")
-        active14.config(text="O")
-
-def B15(active15):
-    active_content = active15.cget("text")
-    if active_content == "O":
-        active15.config(text="X")
-        file_var.append("P6")
-    if active_content == "X":
-        file_var.remove("P6")
-        active15.config(text="O")
-
-def B16(active16):
-    active_content = active16.cget("text")
-    if active_content == "O":
-        active16.config(text="X")
-        file_var.append("P7")
-    if active_content == "X":
-        file_var.remove("P7")
-        active16.config(text="O")
-
-def B17(active17):
-    active_content = active17.cget("text")
-    if active_content == "O":
-        active17.config(text="X")
-        file_var.append("P8")
-    if active_content == "X":
-        file_var.remove("P8")
-        active17.config(text="O")
-
-def B18(active18):
-    active_content = active18.cget("text")
-    if active_content == "O":
-        active18.config(text="X")
-        file_var.append("P9")
-    if active_content == "X":
-        file_var.remove("P9")
-        active18.config(text="O")
-
-def B19(active19):
-    active_content = active19.cget("text")
-    if active_content == "O":
-        active19.config(text="X")
-        file_var.append("P10")
-    if active_content == "X":
-        file_var.remove("P10")
-        active19.config(text="O")
-
-def B20(active20):
-    active_content = active20.cget("text")
-    if active_content == "O":
-        active20.config(text="X")
-        file_var.append("P11")
-    if active_content == "X":
-        file_var.remove("P11")
-        active20.config(text="O")
-
-def B21(active21):
-    active_content = active21.cget("text")
-    if active_content == "O":
-        active21.config(text="X")
-        file_var.append("P12")
-    if active_content == "X":
-        file_var.remove("P12")
-        active21.config(text="O")
-
-def B22(active22):
-    active_content = active22.cget("text")
-    if active_content == "O":
-        active22.config(text="X")
-        file_var.append("P13")
-    if active_content == "X":
-        file_var.remove("P13")
-        active22.config(text="O")
-
-def B23(active23):
-    active_content = active23.cget("text")
-    if active_content == "O":
-        active23.config(text="X")
-        file_var.append("P14")
-    if active_content == "X":
-        file_var.remove("P14")
-        active23.config(text="O")
-
-def B24(active24):
-    active_content = active24.cget("text")
-    if active_content == "O":
-        active24.config(text="X")
-        file_var.append("P15")
-    if active_content == "X":
-        file_var.remove("P15")
-        active24.config(text="O")
-
-def B25(active25):
-    active_content = active25.cget("text")
-    if active_content == "O":
-        active25.config(text="X")
-        file_var.append("P16")
-    if active_content == "X":
-        file_var.remove("P16")
-        active25.config(text="O")
-
-def B26(active26):
-    active_content = active26.cget("text")
-    if active_content == "O":
-        active26.config(text="X")
-        file_var.append("P17")
-    if active_content == "X":
-        file_var.remove("P17")
-        active26.config(text="O")
-
-def B27(active27):
-    active_content = active27.cget("text")
-    if active_content == "O":
-        active27.config(text="X")
-        file_var.append("P18")
-    if active_content == "X":
-        file_var.remove("P18")
-        active27.config(text="O")
-
 def proof(active1, active2, active4, active5, active6, active7, active8, active9):
-    if len(file_var) == 0:
+    if len(file_var) == 1:
         print("Es wurde nichts ausgewaehlt.")
     else:
         if "A1" in file_var and "A2" in file_var:
