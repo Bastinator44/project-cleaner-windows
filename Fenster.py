@@ -70,6 +70,8 @@ def Fenster():
     active10 = Label(fenster, text="O")
     active10.place(x=520, y=120, width=10)
 
+    Button11 = Button(fenster, text="Remove Apps from installed package", **farbe_hg_b, command=lambda: B11(active11)) # type: ignore
+
 
     close = Button(fenster, text="Schließen", command=fenster.destroy)
     close.place(x=95, y=660, width=300)
