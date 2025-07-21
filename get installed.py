@@ -23,4 +23,4 @@ provisioned = get_provisioned_packages()
 installed = get_installed_packages()
 
 print("Provisioned Packages:", provisioned)
-print("Installed Packages:", installed)
+print("Installed Packages:", installed) 
