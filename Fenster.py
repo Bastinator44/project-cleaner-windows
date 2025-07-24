@@ -61,6 +61,16 @@ def Fenster():
     active9 = Label(fenster, text="O")
     active9.place(x=80, y=440, width=10)
 
+    Button11 = Button(fenster, text="klassisches Startmenue", **farbe_hg_b, command=lambda: B11(active11)) # type: ignore
+    Button11.place(x=100, y=480, width=300)
+    active11 = Label(fenster, text="O")
+    active11.place(x=80, y=480, width=10)
+
+    Button12 = Button(fenster, text="modernes Startmenue", **farbe_hg_b, command=lambda: B12(active12)) # type: ignore
+    Button12.place(x=100, y=520, width=300)
+    active12 = Label(fenster, text="O")
+    active12.place(x=80, y=520, width=10)
+
 # Programm Einstellungen    
     Label2 = Label(fenster, text="Programm Einstellungen (noch nicht benutzen!)")
     Label2.place(x=700, y=80, width=300)
@@ -70,13 +80,11 @@ def Fenster():
     active10 = Label(fenster, text="O")
     active10.place(x=520, y=120, width=10)
 
-    Button11 = Button(fenster, text="Remove Apps from installed package", **farbe_hg_b, command=lambda: B11(active11)) # type: ignore
-
 
     close = Button(fenster, text="Schließen", command=fenster.destroy)
     close.place(x=95, y=660, width=300)
 
-    pruefung = Button(fenster, text="Einstellungen pruefen", command=lambda: proof(active1, active2, active4, active5, active6, active7, active8, active9,))
+    pruefung = Button(fenster, text="Einstellungen pruefen", command=lambda: proof(active1, active2, active4, active5, active6, active7, active8, active9, active11, active12)) # type: ignore
     pruefung.place(x=490, y=660, width=300)
 
     sichern = Button(fenster, text="In Datei speichern", command=lambda: save(file_var))

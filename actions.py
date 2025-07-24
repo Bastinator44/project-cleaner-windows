@@ -14,6 +14,8 @@ dictionary_files = {
         "A7": "Allgemeine Einstellungen/7_Widgets_aktivieren.bat",
         "A8": "Allgemeine Einstellungen/8_klassisches_Aktionsmenue.bat",
         "A9": "Allgemeine Einstellungen/9_modernes_Aktionsmenue.bat",
+        "A11": "Allgemeine Einstellungen/11_klassisches_Startmenue.bat",
+        "A12": "Allgemeine Einstellungen/12_modernes_Startmenue.bat",
         "P1": "Programm Einstellungen/1_remove_apps_prov_package.bat"
     }
 
@@ -107,7 +109,25 @@ def B10(active10):
         file_var.remove("P1")
         active10.config(text="O")
 
-def proof(active1, active2, active4, active5, active6, active7, active8, active9):
+def B11(active11):
+    active_content = active11.cget("text")
+    if active_content == "O":
+        active11.config(text="X")
+        file_var.append("A11")
+    if active_content == "X":
+        file_var.remove("A11")
+        active11.config(text="O")
+    
+def B12(active12):
+    active_content = active12.cget("text")
+    if active_content == "O":
+        active12.config(text="X")
+        file_var.append("A12")
+    if active_content == "X":
+        file_var.remove("A12")
+        active12.config(text="O")
+
+def proof(active1, active2, active4, active5, active6, active7, active8, active9, active11, active12):
     if len(file_var) == 1:
         print("Es wurde nichts ausgewaehlt.")
     else:
@@ -127,6 +147,11 @@ def proof(active1, active2, active4, active5, active6, active7, active8, active9
             B08(active8)
             B09(active9)
             print("Aktionsmenue Einstellungen wurden entfernt.")
+        if "A11" in file_var and "A12" in file_var:
+            B11(active11)
+            B12(active12)
+            print("Startmenue Einstellungen wurden entfernt.")
+
     
     print("Pruefung abgeschlossen.")
 
@@ -151,10 +176,10 @@ def work2(file_paths):
     return text
 
 def safe(text):
-    # Öffnet den Speichern-Dialog
     file_path = filedialog.asksaveasfilename(
         defaultextension=".bat",
-        filetypes=[("Scheiß Verficktes Windows Script", "*.bat"), ("Alle Dateien", "*.*")]
+        filetypes=[("Scheiß Verficktes Windows Script", "*.bat"), ("Alle Dateien", "*.*"),
+                   ("Windows Batch Datei", "*.bat")]
     )
     if file_path:
         with open(file_path, "w", encoding="utf-8") as f:
