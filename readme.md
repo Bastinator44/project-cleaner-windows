@@ -20,4 +20,5 @@ Vorbereitung (Linux)
 
   startet das virtual environment
 
-    
+    bash 
+    source .venv/bin/activate

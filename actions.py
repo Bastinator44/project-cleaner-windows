@@ -183,4 +183,4 @@ def safe(text):
     )
     if file_path:
         with open(file_path, "w", encoding="utf-8") as f:
-            f.write(text)
+            f.write(text) 
