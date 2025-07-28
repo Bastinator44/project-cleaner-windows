@@ -178,7 +178,7 @@ def work2(file_paths):
 def safe(text):
     file_path = filedialog.asksaveasfilename(
         defaultextension=".bat",
-        filetypes=[("Scheiß Verficktes Windows Script", "*.bat"), ("Alle Dateien", "*.*"),
+        filetypes=[("Bloedes Windows Script", "*.bat"), ("Alle Dateien", "*.*"),
                    ("Windows Batch Datei", "*.bat")]
     )
     if file_path:
